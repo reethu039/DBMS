@@ -1,0 +1,8 @@
+df1 = pd.read_excel("/Users/reethu/coding/college/DBMS/Assignments/bookset.xlsx")
+df2= pd.read_excel("/Users/reethu/coding/college/DBMS/Assignments/ratingset.xlsx")
+df3=pd.read_excel("/Users/reethu/coding/college/DBMS/Assignments/userset.xlsx")
+
+df1.to_sql('BOOKS', con, index=False)
+df2.to_sql('RATINGS', con, index=False)
+df3.to_sql('USERS', con, index=False)
+
